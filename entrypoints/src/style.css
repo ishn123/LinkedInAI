@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply flex items-center rounded-lg font-semibold h-fit gap-1 text-gray-500 text-2xl py-2 px-4;
+}
+
+.btn-secondary {
+    @apply bg-white border-2 border-gray-400;
+}
+
+.btn-secondary:hover {
+    @apply bg-gray-200;
+}
+
+.btn-primary {
+    @apply bg-primary text-white;
+}
+
+.btn-primary:hover {
+    @apply bg-primary-dark;
+}
+.my-overlay-wrapper {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px;  /* Adjust for placement */
+    z-index: 1000;  /* Ensure it appears above other content */
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.my-overlay-wrapper input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.my-overlay-wrapper button {
+    background-color: #0073b1; /* LinkedIn blue */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.my-overlay-wrapper button:hover {
+    background-color: #005582; /* Darker LinkedIn blue */
+}
